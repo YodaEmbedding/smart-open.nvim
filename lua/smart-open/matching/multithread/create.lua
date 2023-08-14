@@ -12,7 +12,7 @@ local function create_matcher(matching_algorithm, context)
   local slot_count = 4 -- threadpool thread count
   local last_processed_index = 0
   local top_entries = {} -- treat it as ascending (lowest relevance last)
-  local top_entry_count = 20
+  local top_entry_count = 1024
   local waiting_threads = 0
   local history_data_cache = {}
 
